@@ -32,10 +32,10 @@ const lista2 = [
  * viene aggiunto ad un nuovo array il contenuto dell'elemento
  */
 const calcPosEach = (arr, a, b) => {
-    if(a >= b)
-    {
-        return false;
-    }
+    // if(a >= b)
+    // {
+    //     return false;
+    // }
     const arrShorted = [];
     arr.forEach((element,index) => {
         if (index >= a && index <= b)
@@ -52,10 +52,10 @@ const calcPosEach = (arr, a, b) => {
  * viene aggiunto ad un nuovo array il contenuto dell'elemento
  */
 const calcPosFilter = (arr, a, b) => {
-    if(a >= b)
-    {
-        return false;
-    }
+    // if(a >= b)
+    // {
+    //     return false;
+    // }
     return arr.filter((element,index) => (index >= a && index <= b) ? true : false);
     // return arr.filter((element,index) =>{
     //     return (index >= a && index <= b) ? true : false;
@@ -64,7 +64,7 @@ const calcPosFilter = (arr, a, b) => {
 
 
 //Output per mostrare il primo array (lista1)
-const listaNewEach1 = calcPosEach(lista1, 3, 7);
+const listaNewEach1 = calcPosEach(lista1, 8, 7);
 const listaNewFilter1 = calcPosFilter(lista1, 3, 8);
 console.log(listaNewEach1);
 console.log(listaNewFilter1);
