@@ -48,16 +48,20 @@ for(let squadra of squadre)
 }
 console.log (squadre);
 
-let arr = [];
-for(let element of squadre)
-{
+// let arr = [];
+// for(let element of squadre)
+// {
+//     ({nome, falli} = element);
+//     // console.log (nome,falli);
+//     arr.push({nome,falli});
+// }
+// console.log(arr);
+
+const arr = squadre.map(element => {
     ({nome, falli} = element);
-    // console.log (nome,falli);
-    arr.push({nome,falli});
-}
+    return {nome,falli};
+});
 console.log(arr);
-
-
 
 /**Restituisce un numero compreso tra min e max */
 function randomGen (min, max){
